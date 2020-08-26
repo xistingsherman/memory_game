@@ -1,0 +1,221 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -moz-box-sizing: border-box; /*for firefox*/
+  -ms-box-sizing: border-box; /*internet explorer*/
+  -webkit-box-sizing: border-box; /* google chrome and safari */
+  sizing: border-box;
+
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+html{
+  background: #E681FF;
+}
+.cards{
+  width: 125px;
+  height: 125px;
+  border: 1px solid #5743FF;
+  display: inline;
+  float: left;
+  /*padding: 5px;*/
+  margin: 5px;
+}
+
+.cards{
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+img{
+  height: 125px;
+  width: 125px;
+}
+.front{
+  background-color: #5743FF;
+  transform: rotateY(180deg);
+  transition: transform 0.5s linear 0s;
+  backface-visibility: hidden;
+
+  /*transform: property time-duration type delay;
+  padding: 5px;
+  width: 125px;
+  padding: 0px 5px 50px 35px;
+  margin: 0;
+  */
+}
+
+.back{
+position: absolute;
+background-color: #5743FF;
+width: 125px;
+padding: 0px;
+transform: rotateY(0deg);
+transition: transform 0.5s linear 0s;
+backface-visibility: hidden;
+}
+
+
+#h1{
+  color: #652F9E;
+  text-align: center;
+  font-size: 90px;
+  margin-top: 0px
+  font-weight: bolder;
+  letter-spacing: 3px;
+  word-spacing: 7px;
+  text-shadow: 3px 3px 2px rgba(101,47,158,0.62);
+}
+#updates{
+  float: right;
+  font-size: 40px;
+  margin: 100px, 130px, 100px, 100px;
+}
+
+#game{
+  float: left;
+  width: 820px;
+  height: auto;
+  margin: 10px 20px 20px 100px;
+  border: 4px solid #5743FF;
+  background-color: #36DEFF;
+  box-shadow: 4px 4px 3px 0px rgba(87,67,255,0.91);
+}
+
+#reset{
+  background-color: #e6e6e6;
+  margin: 16px;
+  font-size: 40px;
+  font-weight: : 400;
+  text-shadow: 2px 2px 2px rgba(94, 119, 115, 0.82);
+  border: 1px solid grey;
+  box-shadow: 2px 2px 1px 0px rgba(119, 116, 115, 1);
+  /*box-shadow: h-shadow v-shadow blur spread rgba();
+  border: width type color;
+  */
+}
+
+
+#head, #updates, #game{
+
+}
+
+#opacityD, #results{
+  display: none;
+}
+
+#reset:hover{
+  cursor: pointer;
+  background-color: #cccccc;
+}
+
+#timer{
+  margin: 50px;
+  margin-left: 45px;
+  text-align: center;
+  color: #652F9E;
+  text-shadow: 1.5px 1.5px 1px rgba(101,47,158,0.62);
+}
+
+#score{
+  margin:50px; /*css collapses margins, takes top value*/
+  margin-left: 38px;
+  color: #652F9E;
+  text-shadow: 1.5px 1.5px 1px rgba(101,47,158,0.62);
+}
+#opacityD{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 10;
+}
+#results{
+  z-index: 10;
+  position: fixed;
+  width: 500px;
+  height: auto;
+  margin: 0px;
+}
+#popBody{
+  background-color: white;
+  height: 250px;
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #511519;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+}
+#popSubmit{
+  background-color: #cf4a53;
+  height: 100px;
+  padding: 25px;
+  border-style: solid;
+  border-width: 0px 2px 2px 2px;
+  border-color: #511519;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#imgDiv{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  margin: 20px auto; /*automatically divides space of right and left parent to center image*/
+}
+
+#imgDiv img{
+  width: 100px;
+  height: 100px;
+
+}
+
+#h1Res {
+  margin: 0px 12px 12px 12px;
+  text-align: center;
+  font-family: cursive;
+  color: #4d0000;
+}
+
+#pRes{
+  color: #4d0000;
+  text-align: center:center;
+}
+
+
+p{
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+#submit-button {
+  height: 50px;
+  width: 95px;
+  margin: 0 auto;
+}
+
+button{
+  height: 50px;
+  width: 95px;
+  background-color: #4d0000;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 2px 2px 0.5px rgba(0,0,0,0.5);
+  border: none;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  display: block;
+}
